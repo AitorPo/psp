@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="tfUrl" promptText="URL a descargar...">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="31.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnDownload" mnemonicParsing="false" onAction="#setDownload" text="Descargar">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnPause" mnemonicParsing="false" onAction="#setPause" text="Detener">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnResume" mnemonicParsing="false" onAction="#setResume" text="Reanudar">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#setCancel" text="Cancelar">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="180.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#setDelete" text="Eliminar">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ProgressBar fx:id="pbProgress" prefHeight="18.0" prefWidth="592.0" progress="0.0">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </ProgressBar>
+      <Label fx:id="lblStatus" prefHeight="18.0" prefWidth="592.0">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
