@@ -1,0 +1,3 @@
+
+https://get.enterprisedb.com/postgresql/postgresql-13.1-1-windows-x64.exe
+https://get.enterprisedb.com/postgresql/postgresql-13.1-1-windows-x64.exe
